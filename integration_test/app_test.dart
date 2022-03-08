@@ -16,15 +16,4 @@ void main() {
     await tester.tap(find.byType(CustomButton));
     await tester.pump();
   });
-  //
-  // testWidgets('Get 5 time response on button tap', (WidgetTester tester) async {
-  //   await tester.pumpWidget(MyApp());
-  //   var button = find.text("Ping demo");
-  //   expect(button, findsOneWidget);
-  //   print("Ping demo");
-  //   await tester.tap(button);
-  //
-  //   await tester.tap(find.byType(CustomButton));
-  //   await tester.pump();
-  // });
 }
