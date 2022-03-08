@@ -4,7 +4,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:ping_demo/controller/home.dart';
-
 import 'package:ping_demo/main.dart';
 import 'package:ping_demo/model/ping_model.dart';
 import 'package:ping_demo/widgets/ping_button.dart';
@@ -24,11 +23,9 @@ void main() {
 
 class HomeScreen extends GetView<HomeController> {
   static const pageId = "/Home";
-
   Duration times = const Duration();
 
   HomeScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +48,6 @@ class HomeScreen extends GetView<HomeController> {
   ping() {
     final ping = Ping('google.com', count: 5);
     print('Running command: ${ping.command}');
-
     ping.stream.listen((event) {
       PingTime model =
           PingTime(ip: event.response!.ip, time: event.response!.time);
