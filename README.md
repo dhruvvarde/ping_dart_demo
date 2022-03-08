@@ -17,5 +17,12 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## For integration testing run the command below in the Terminal
+flutter test integration_test/app_test.dart
 
-flutter test integration_test/app_test.dart# ping_dart_demo
+
+## For widget testing run the command below in the Terminal
+flutter test test/widget_test.dart
+
+## For unit testing run the command below in the Terminal
+flutter test test/test.dart
+
