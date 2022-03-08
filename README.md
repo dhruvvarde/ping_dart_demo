@@ -15,14 +15,15 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## run the command below in the Terminal for testing
 
-## For integration testing run the command below in the Terminal
+For integration testing
 flutter test integration_test/app_test.dart
 
 
-## For widget testing run the command below in the Terminal
+For widget testing
 flutter test test/widget_test.dart
 
-## For unit testing run the command below in the Terminal
+For unit testing
 flutter test test/test.dart
 
