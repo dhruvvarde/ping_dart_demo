@@ -26,6 +26,7 @@ class HomeScreen extends GetView<HomeController> {
   Duration times = const Duration();
 
   HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,9 +54,7 @@ class HomeScreen extends GetView<HomeController> {
           PingTime(ip: event.response!.ip, time: event.response!.time);
       controller.pingTime.add(model);
       times = times + event.response!.time!;
-      print("Added " + times.toString());
       controller.durationSum.add(times);
-      print("Added Array " + controller.durationSum.toString());
       print(event.response);
     });
   }
