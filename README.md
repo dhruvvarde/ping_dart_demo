@@ -18,12 +18,12 @@ samples, guidance on mobile development, and a full API reference.
 ## run the command below in the Terminal for testing
 
 For integration testing
-flutter test integration_test/app_test.dart
+- flutter test integration_test/app_test.dart
 
 
 For widget testing
-flutter test test/widget_test.dart
+- flutter test test/widget_test.dart
 
 For unit testing
-flutter test test/test.dart
+- flutter test test/test.dart
 
